@@ -14,9 +14,11 @@ function initializePage() {
 }
 
 $(function() {
-	$('.friendname').click(function(e){
-		e.preventDefault();
-		$(this).text(anagrammedName($(this).text()));
+	$('.something').click(function(){
+		var newtext = anagrammedName($(this).text());
+		console.log($(this).text());
+		console.log(newtext);
+		return newtext;
 	});
 });
 
